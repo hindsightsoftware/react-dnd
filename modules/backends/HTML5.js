@@ -158,7 +158,6 @@ var HTML5 = {
   },
 
   getDragSourceProps(component, type) {
-    // TODO: optimize bind when we figure this out
     return {
       draggable: true,
       onDragStart: component.handleDragStart.bind(component, type),
@@ -167,7 +166,6 @@ var HTML5 = {
   },
 
   getDropTargetProps(component, types) {
-    // TODO: optimize bind when we figure this out
     return {
       onDragEnter: component.handleDragEnter.bind(component, types),
       onDragOver: component.handleDragOver.bind(component, types),
